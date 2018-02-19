@@ -31,5 +31,7 @@ public class App {
 		JsonConversion convert = new JsonConversion();
 		convert.printJson(map);
 		convert.printJson(accountOne);
+
+		System.out.println(service.getCountForFirstName("John"));
 	}
 }

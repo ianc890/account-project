@@ -39,4 +39,17 @@ public class Service {
 		}
 	}
 
+	public int getCountForFirstName(String firstName) {
+
+		/*int count = 0;
+		for(Account eachAccount:accMap.values()) {
+			if(eachAccount.getFirstName().equals(firstName)) {
+				System.out.println("This is the value of eachAccount firstName "+eachAccount.getFirstName());
+				count++;
+			}
+		}
+		return count;*/
+
+		return (int) accMap.values().stream().filter(eachAccount -> eachAccount.getFirstName().equals(firstName)).count();
+	}
 }
