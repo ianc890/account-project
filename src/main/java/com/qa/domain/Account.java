@@ -1,4 +1,4 @@
-package com.qa.app;
+package com.qa.domain;
 
 public class Account {
 	
