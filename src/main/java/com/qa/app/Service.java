@@ -7,6 +7,10 @@ public class Service {
 	
 	private Map<Integer, Account> accMap = new HashMap<Integer, Account>();
 	
+	public Service(Map map) {
+		this.accMap = map;
+	}
+	
 	public Integer generateKey() {
 		Integer id = accMap.size()+1;
 		return id;
